@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update User Details</title>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend>Update User Details</legend>
+			<table>
+				<tr>
+					<td>Emplyee Name</td>
+					<td><input type="text" name="ename" value="<%= user.ename %>"></td>
+				</tr>
+				<tr>
+					<td>Contact Number</td>
+					<td><input type="text" name="conum" value="<%= user.conum %>"></td>
+				</tr>
+				<tr>
+					<td>User Name</td>
+					<td><input type="text" name="uname" value="<%= user.uname %>"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="password" value="<%= user.password %>"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

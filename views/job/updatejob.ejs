@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Job Details</title>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend>Update Job Details</legend>
+			<table>
+				<tr>
+					<td>Company Name</td>
+					<td><input type="text" name="cname" value="<%= job.cname %>"></td>
+				</tr>
+				<tr>
+					<td>Job Title</td>
+					<td><input type="text" name="jtitle" value="<%= job.jtitle %>"></td>
+				</tr>
+				<tr>
+					<td>Job Location</td>
+					<td><input type="text" name="jlocation" value="<%= job.jlocation %>"></td>
+				</tr>
+				<tr>
+					<td>Salary</td>
+					<td><input type="text" name="salary" value="<%= job.salary %>"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

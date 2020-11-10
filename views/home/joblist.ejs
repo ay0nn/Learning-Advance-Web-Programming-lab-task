@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job List</title>
+</head>
+<body>
+	<h1> Available Job List</h1>
+
+	<a href="/home">Back</a> | 
+	<a href="/logout">logout</a> 
+	<br>
+
+	<table border="1">
+		<tr>
+			<td>ID</td>
+			<td>Company Name</td>
+			<td>Job Title</td>
+			<td>Job Location</td>
+			<td>Salary</td>
+		</tr>
+
+		<% 
+			jobs.forEach( function(jb){ %>
+			<tr>
+				<td><%= jb.id %></td>
+				<td><%= jb.cname %></td>
+				<td><%= jb.jtitle %></td>
+				<td><%= jb.jloaction %></td>
+				<td><%= jb.salary %></td>
+				<td>
+					<a href="/job/edit/<%= jb.id %>">Edit</a> |
+				</td>
+			</tr>
+
+		<%
+			}); 
+		%>
+		
+	</table>
+
+</body>
+</html>
